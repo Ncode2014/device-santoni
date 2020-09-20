@@ -25,6 +25,7 @@ $(call inherit-product, vendor/xiaomi/santoni/santoni-vendor.mk)
 PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8996/display
 PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8996/audio
 PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8996/media
+PRODUCT_SOONG_NAMESPACES += hardware/google/pixel
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
