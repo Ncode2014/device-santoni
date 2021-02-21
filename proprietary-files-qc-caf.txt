@@ -43,8 +43,6 @@ vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb|28bb8689c548683e70fb38652d090d3feb2
 vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb|81f2959087d87388e455c18bc0896780fb89656f
 
 # Audio libraries - from LA.UM.9.6.2.r1-03600-89xx.0
-system_ext/etc/permissions/audiosphere.xml|015ad7be4921039238bfa3d34d052d752453e49c
-system_ext/framework/audiosphere.jar|9c28317f12b93a6d881c80a991ff24716fce4a12
 vendor/lib/libacdb-fts.so|ce5d9ee6188712bb55658fc00548aef96ec0ff17
 vendor/lib/libacdbloader.so|55a231d238826908bd1e89032a0a25f414878a7f
 vendor/lib/libacdbrtac.so|58e01597eb162cc5783d9ca6da54e46cf67ad638
@@ -52,10 +50,10 @@ vendor/lib/libadiertac.so|d7d70e99afaad0de116bf757b0621b9bb4dcd93d
 vendor/lib/libadm.so|a5e6c65b7133440b4550234db4454e4c81627f66
 vendor/lib/libaudcal.so|eb40b2659ed470196cce8950dd74eca96932b2aa
 vendor/lib/libaudioalsa.so|58feb2c5cbc4ac6e23ef4896c87785bed8db3c80
+-vendor/lib/libaudioparsers.so|a39f1f6e789547f63b7e2369d73b29876763d68d
 vendor/lib/libdrc.so|303d67b5bfea162ae994d3817de317258035c42a
 vendor/lib/libqtigef.so|fbb307c0da385bf09cbdef714e8fc1ecfc7ba6fd
 vendor/lib/libsurround_3mic_proc.so|84a4d84fcf567554fb5174fc6d41310d864e5f8e
-vendor/lib/soundfx/libasphere.so|c5d774c899e30c8e14ff20b1790df553b34e41ec
 vendor/lib/soundfx/libqcbassboost.so|67ab526a37e5df11392d1795d6648f9392fed0c2
 vendor/lib/soundfx/libqcreverb.so|28f96f5f3f6a55d86eac851b6400ebccd7b6ac8d
 vendor/lib/soundfx/libqcvirt.so|a27b5916c1967042d08f22e53dad5c336bb3634b
@@ -65,8 +63,8 @@ vendor/lib64/libacdbrtac.so|8975cdf11a072bd10c9c8aaf41612a072376ab3c
 vendor/lib64/libadiertac.so|e6cddad2fe64c4b6fb667c95b918d235dd6da01d
 vendor/lib64/libaudcal.so|854016f08b7c31d1e9152f7bd79f61b5e447d583
 vendor/lib64/libaudioalsa.so|534d4dc07fecea0611273c745721b1ed2015a3a3
+-vendor/lib64/libaudioparsers.so|1463c5ee0f2f040835386d9ccb4a4b010c5bdf58
 vendor/lib64/libqtigef.so|b3f1cb946809bfe20a4afced73b4fd24c5591421
-vendor/lib64/soundfx/libasphere.so|0074f7645a035955e35341f76aa414608ab569ba
 vendor/lib64/soundfx/libqcbassboost.so|cf97dd5888911723bbc2670dbfb1db564e4fccf8
 vendor/lib64/soundfx/libqcreverb.so|7612cdf973b010e1344444932646cc12a2f22ea7
 vendor/lib64/soundfx/libqcvirt.so|a2ae2633b8b1763dc27faaea295f69c879c14d68
