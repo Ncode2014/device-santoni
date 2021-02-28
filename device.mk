@@ -552,10 +552,6 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     libnl
 
-# Dirac
-PRODUCT_PACKAGES += \
-    Dirac
-
 # Prebuilts
 PRODUCT_PACKAGES += \
     RemovePackages
