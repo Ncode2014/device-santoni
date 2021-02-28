@@ -558,10 +558,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     XiaomiParts
 
-# Dirac
-PRODUCT_PACKAGES += \
-    Dirac
-
 # Prebuilts
 PRODUCT_PACKAGES += \
     RemovePackages
