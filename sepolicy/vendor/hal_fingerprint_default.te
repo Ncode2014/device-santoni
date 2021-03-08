@@ -1,4 +1,5 @@
 typeattribute hal_fingerprint_default binder_in_vendor_violators;
+type fpc_socket, file_type;
 
 # Allow Binder communication
 vndbinder_use(hal_fingerprint_default)
@@ -20,9 +21,9 @@ allow hal_fingerprint_default fingerprintd_data_file:dir rw_dir_perms;
 allow hal_fingerprint_default fpc_data_file:dir rw_dir_perms;
 allow hal_fingerprint_default fpc_data_file:sock_file create_file_perms;
 
-# Allow read and write to fpc_sysfs
-allow hal_fingerprint_default fpc_sysfs:file rw_file_perms;
-allow hal_fingerprint_default fpc_sysfs:dir r_dir_perms;
+# Allow read and write to sysfs_fps_attr
+allow hal_fingerprint_default sysfs_fps_attr:file rw_file_perms;
+allow hal_fingerprint_default sysfs_fps_attr:dir r_dir_perms;
 
 # Allow access to uhid device
 allow hal_fingerprint_default uhid_device:chr_file rw_file_perms;
