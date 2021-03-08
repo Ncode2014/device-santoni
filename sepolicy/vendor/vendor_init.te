@@ -6,7 +6,6 @@ allow vendor_init rootfs:lnk_file setattr;
 allow vendor_init fpc_data_file:dir create_file_perms;
 allow vendor_init proc_dirty_ratio:file { write };
 allow vendor_init proc_dirty:file { write };
-allow vendor_init proc_swap:file { open write };
 
 allow vendor_init {
   bluetooth_data_file
@@ -18,4 +17,6 @@ allow vendor_init {
   wifi_data_file
   wpa_socket
   rootfs
+  fpc_data_file
+  proc_swap
 }:dir { create search getattr open read setattr ioctl write add_name remove_name rmdir relabelfrom };
