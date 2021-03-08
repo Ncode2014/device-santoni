@@ -249,7 +249,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.2 \
+    android.hardware.biometrics.fingerprint@2.1 \
     libbacktrace-vendor \
     libunwind-vendor
 
