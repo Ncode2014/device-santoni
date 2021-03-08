@@ -17,4 +17,5 @@
 namespace android {
      extern "C" void _ZN7android22checkCallingPermissionERKNS_8String16E() {}
      extern "C" void _ZN7android21defaultServiceManagerEv() {}
+     extern "C" void _ZN7android14IPCThreadState14joinThreadPoolEb() {}
 }
