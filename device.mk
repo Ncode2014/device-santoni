@@ -253,7 +253,8 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.custom \
     libbacktrace-vendor \
     libunwind-vendor \
-    fakelogprint
+    fakelogprint \
+    libshims_gxfpd
 
 # FM
 PRODUCT_PACKAGES += \
