@@ -22,18 +22,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 $(call inherit-product, vendor/xiaomi/santoni/santoni-vendor.mk)
 
 #HAls
-PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8996/display
-PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8996/audio
-PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/msm8996/media
+PRODUCT_SOONG_NAMESPACES += hardware/qcom/display
+PRODUCT_SOONG_NAMESPACES += vendor/qcom/opensource/audio-hal/primary-hal
+PRODUCT_SOONG_NAMESPACES += hardware/qcom/media
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay
 
 # RRO (Runtime Resource Overlay)
 PRODUCT_ENFORCE_RRO_TARGETS := *
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay-lineage/lineage-sdk
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay/packages/apps/CarrierConfig
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay/packages/apps/Snap
 
@@ -276,14 +274,6 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl.recovery \
     android.hardware.health@2.1-service
 
-# HIDL
-PRODUCT_PACKAGES += \
-    android.hidl.base@1.0 \
-    android.hidl.manager@1.0 \
-    android.hidl.manager@1.0-java \
-    libhidltransport \
-    libhidltransport.vendor
-
 # HW crypto
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
@@ -407,7 +397,6 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.qcom.rc \
     init.qcom.sh \
-    init.qcom.usb.rc \
     init.msm.usb.configfs.rc \
     init.target.rc \
     ueventd.qcom.rc \
@@ -441,14 +430,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Telephony
 PRODUCT_PACKAGES += \
-    telephony-ext \
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml \
     qti-telephony-utils \
     qti_telephony_utils.xml \
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
@@ -491,14 +476,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
-
-# Touch HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.xiaomi_8937
-
-# Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
 
 # USB HAL
 PRODUCT_PACKAGES += \
@@ -549,14 +526,6 @@ PRODUCT_BOOT_JARS += \
 
 PRODUCT_PACKAGES += \
     libnl
-
-# Dirac
-PRODUCT_PACKAGES += \
-    Dirac
-
-# Prebuilts
-PRODUCT_PACKAGES += \
-    RemovePackages
 
 # Do not spin up a separate process for the network stack, use an in-process APK.
 PRODUCT_PACKAGES += InProcessNetworkStack
