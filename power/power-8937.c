@@ -48,7 +48,7 @@
 #include "hint-data.h"
 #include "metadata-defs.h"
 #include "performance.h"
-#include "power-common.h"
+#include "power-common-custom.h"
 #include "utils.h"
 
 static int video_encode_hint_sent;
@@ -92,7 +92,8 @@ int get_number_of_profiles() {
 }
 #endif
 
-void set_power_profile(int profile) {
+void set_power_profile(void *data) {
+    int profile = data ? *((int*)data) : 0;
     int ret = -EINVAL;
     const char* profile_name = NULL;
 

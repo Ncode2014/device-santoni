@@ -3,6 +3,7 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
 LOCAL_C_INCLUDES := vendor/qcom/opensource/power
+LOCAL_C_INCLUDES += ${LOCAL_PATH}/power-common-custom.h
 LOCAL_CFLAGS := -Wall -Werror
 LOCAL_SHARED_LIBRARIES := liblog
 LOCAL_HEADER_LIBRARIES += libhardware_headers
