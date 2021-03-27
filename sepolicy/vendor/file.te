@@ -37,3 +37,4 @@ type sysfs_dt2w, sysfs_type, fs_type;
 
 # Custom
 type sysfs_msm_subsys, sysfs_type, fs_type;
+type debugfs_rpm, debugfs_type, fs_type;
