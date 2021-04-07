@@ -40,6 +40,7 @@ vendor/lib/libsurround_3mic_proc.so|84a4d84fcf567554fb5174fc6d41310d864e5f8e
 vendor/lib/soundfx/libqcbassboost.so|84eccc67da4c0b8f4bae6d4db4fde301571db7ab
 vendor/lib/soundfx/libqcreverb.so|dac53a1190f94553062ac8db9fb6f53428ff089f
 vendor/lib/soundfx/libqcvirt.so|d27b2b514b6ae3b9f59395226feb4581962119a1
+vendor/lib/soundfx/libshoebox.so|cdc1203dfa84c9caaa3960a667b751fc4433861f
 vendor/lib64/libacdb-fts.so|8bf7d9173cdf503ffa240be382d8bfb06c6dfdb5
 vendor/lib64/libacdbloader.so|0e20d501f0351b1bf16163ef38f102376bdd11c0
 vendor/lib64/libacdbrtac.so|8975cdf11a072bd10c9c8aaf41612a072376ab3c
@@ -50,6 +51,7 @@ vendor/lib64/libqtigef.so|b3f1cb946809bfe20a4afced73b4fd24c5591421
 vendor/lib64/soundfx/libqcbassboost.so|f5a89f7f5af0204d3f32c1f7ec646c6a8e46bd02
 vendor/lib64/soundfx/libqcreverb.so|352b79108301481ed0e56df83c49333bdf162cc8
 vendor/lib64/soundfx/libqcvirt.so|2aac82b484711a290837a48367eeaa9c334e900e
+vendor/lib64/soundfx/libshoebox.so|2fd9ea70cc9d683d88d68f37929879978c0ed933
 
 # AV Enhancements - from LA.UM.9.6.2.r1-04100-89xx.0
 system_ext/lib/libavenhancements.so|248d6cf0db255fb2cf5e077e7127f510036f7ec0
